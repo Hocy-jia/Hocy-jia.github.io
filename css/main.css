@@ -1249,7 +1249,6 @@ header.header {
   border: 1px solid #eee;
   max-width: 120px;
   padding: 2px;
-  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -1260,6 +1259,10 @@ header.header {
   color: #999;
   font-size: 0.8125em;
   margin-top: 0;
+}
+.site-author-image:hover {
+  -webkit-animation: jello 1s;
+  animation: jello 1s;
 }
 .links-of-author a {
   font-size: 0.8125em;

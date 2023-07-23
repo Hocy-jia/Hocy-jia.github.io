@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Tmux</title>
+    <url>/29b26b27.html</url>
+    <content><![CDATA[<ol>
+<li>tmux教程</li>
+</ol>
+<p>功能：<br>    (1) 分屏。<br>    (2) 允许断开Terminal连接后，继续运行进程。<br>结构：<br>    一个tmux可以包含多个session，一个session可以包含多个window，一个window可以包含多个pane。<br>    实例：<br>        tmux:<br>            session 0:<br>                window 0:<br>                    pane 0<br>                    pane 1<br>                    pane 2<br>                    …<br>                window 1<br>                window 2<br>                …<br>            session 1<br>            session 2<br>            …</p>
+<span id="more"></span>
+<p>操作：<br>    (1) tmux：新建一个session，其中包含一个window，window中包含一个pane，pane里打开了一个shell对话框。<br>    (2) 按下Ctrl + a后手指松开，然后按%：将当前pane左右平分成两个pane。<br>    (3) 按下Ctrl + a后手指松开，然后按”（注意是双引号”）：将当前pane上下平分成两个pane。<br>    (4) Ctrl + d：关闭当前pane；如果当前window的所有pane均已关闭，则自动关闭window；如果当前session的所有window均已关闭，则自动关闭session。<br>    (5) 鼠标点击可以选pane。<br>    (6) 按下ctrl + a后手指松开，然后按方向键：选择相邻的pane。<br>    (7) 鼠标拖动pane之间的分割线，可以调整分割线的位置。<br>    (8) 按住ctrl + a的同时按方向键，可以调整pane之间分割线的位置。<br>    (9) 按下ctrl + a后手指松开，然后按z：将当前pane全屏&#x2F;取消全屏。<br>    (10) 按下ctrl + a后手指松开，然后按d：挂起当前session。<br>    (11) tmux a：打开之前挂起的session。<br>    (12) 按下ctrl + a后手指松开，然后按s：选择其它session。<br>        方向键 —— 上：选择上一项 session&#x2F;window&#x2F;pane<br>        方向键 —— 下：选择下一项 session&#x2F;window&#x2F;pane<br>        方向键 —— 右：展开当前项 session&#x2F;window<br>        方向键 —— 左：闭合当前项 session&#x2F;window<br>    (13) 按下Ctrl + a后手指松开，然后按c：在当前session中创建一个新的window。<br>    (14) 按下Ctrl + a后手指松开，然后按w：选择其他window，操作方法与(12)完全相同。<br>    (15) 按下Ctrl + a后手指松开，然后按PageUp：翻阅当前pane内的内容。<br>    (16) 鼠标滚轮：翻阅当前pane内的内容。<br>    (17) 在tmux中选中文本时，需要按住shift键。（仅支持Windows和Linux，不支持Mac，不过该操作并不是必须的，因此影响不大）<br>    (18) tmux中复制&#x2F;粘贴文本的通用方式：<br>        (1) 按下Ctrl + a后松开手指，然后按[<br>        (2) 用鼠标选中文本，被选中的文本会被自动复制到tmux的剪贴板<br>        (3) 按下Ctrl + a后松开手指，然后按]，会将剪贴板中的内容粘贴到光标处</p>
+]]></content>
+      <categories>
+        <category>Tool</category>
+      </categories>
+      <tags>
+        <tag>Usefull</tag>
+        <tag>Kit</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vim Kit</title>
     <url>/ac9a4649.html</url>
-    <content><![CDATA[<p>如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。</p>
+    <content><![CDATA[<p>&lt;&gt;<br>如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。</p>
 <p>如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。</p>
 <p>认识 VIM</p>
+<span id="more"></span>
 <p>刚开始用 VIM 打开文件的时候，需要从宏观的去了解一下 VIM 这个编辑器。</p>
 <p>VIM 常用的有四个模式，：</p>
 <p>正常模式 (Normal-mode)<br>插入模式 (Insert-mode)<br>命令模式 (Command-mode)<br>可视模式 (Visual-mode)</p>
@@ -30,7 +49,7 @@
 <p>曾经很长一段时间我都是用 control + [ 用来取代 <ESC> ，但是还是感觉有些难受？</p>
 <p>VIM 有一个配置文件，在 linux 系统中，该配置文件是 .vimrc , 该文件位于 ～ 目录下面 （～ 目录是家目录，也就是用户目录，不了解的可以科学上网查询），是一个隐藏文件，如果该文件不存在可以手动创建一个。</p>
 <p>.vimrc 可以有很多配置，例如显示行号，快捷键配置，插件配置等等。VIM 很多个性化的设置都离不开这个配置文件。zempty 认为 .vimrc 有一个特别重要的配置，那就是配置如下的一行：</p>
-<p> #将ESC键映射为两次j键<br>inoremap jj <Esc><br>这个配置是将 <ESC> 功能键用 jj (连续按两次 j) 来取代。这个配置可以很大程度提高 VIM 的使用效率，下文的讲解 zempty 都会用 jj 来取代键盘上的 <ESC>。</p>
+<p>#将ESC键映射为两次j键<br>inoremap jj <Esc><br>这个配置是将 <ESC> 功能键用 jj (连续按两次 j) 来取代。这个配置可以很大程度提高 VIM 的使用效率，下文的讲解 zempty 都会用 jj 来取代键盘上的 <ESC>。</p>
 <p>用 VIM 打开文件</p>
 <p>如何用 VIM 去打开一个文件呢？</p>
 <p>现在假如有一个文件 file1 ,只需要在文件前面加上 vim 关键字就好：</p>
@@ -200,8 +219,8 @@
 <p>举例如下：</p>
 <p>:map ^D Ahelloworld<ESC>表示在文件的光标所在行的行尾，添加 helloworld 字符串，按住组合键 ctrl + d 就会执行操作。</p>
 <p>使用 ab</p>
-<p>:ab email <a href="mailto:&#x78;&#120;&#120;&#120;&#64;&#103;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#x78;&#120;&#120;&#120;&#64;&#103;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
-<p>: 后面的 ab 是关键字 ,该命令执行后，然后切换到编辑模式下,输入 email 会把输入的 email 自动替换成 <a href="mailto:&#x78;&#120;&#x78;&#x78;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;">&#x78;&#120;&#x78;&#x78;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;</a>。</p>
+<p>:ab email <a href="mailto:&#120;&#120;&#x78;&#x78;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#120;&#120;&#x78;&#x78;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;</a></p>
+<p>: 后面的 ab 是关键字 ,该命令执行后，然后切换到编辑模式下,输入 email 会把输入的 email 自动替换成 <a href="mailto:&#x78;&#120;&#x78;&#x78;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;">&#x78;&#120;&#x78;&#x78;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#109;</a>。</p>
 <p>这个命令主要是处理频繁输入同样的长串字符串。</p>
 <p>VIM 的正常模式（Normal-model）</p>
 <p>VIM 正常模式下，主要进行的操作有光标的移动，复制文本，删除文本，黏贴文本等。</p>
@@ -303,8 +322,8 @@
         <category>Tool</category>
       </categories>
       <tags>
-        <tag>Kit</tag>
         <tag>Usefull</tag>
+        <tag>Kit</tag>
       </tags>
   </entry>
   <entry>
@@ -318,7 +337,10 @@
 <h3 id="Heading-level-3Heading-level-3"><a href="#Heading-level-3Heading-level-3" class="headerlink" title="Heading level 3	Heading level 3"></a>Heading level 3	<h3>Heading level 3</h3></h3><p>Heading level 3</p>
 <h4 id="Heading-level-4Heading-level-4"><a href="#Heading-level-4Heading-level-4" class="headerlink" title="Heading level 4	Heading level 4"></a>Heading level 4	<h4>Heading level 4</h4></h4><p>Heading level 4</p>
 <h5 id="Heading-level-5Heading-level-5"><a href="#Heading-level-5Heading-level-5" class="headerlink" title="Heading level 5	Heading level 5"></a>Heading level 5	<h5>Heading level 5</h5></h5><p>Heading level 5</p>
-<h6 id="Heading-level-6Heading-level-6"><a href="#Heading-level-6Heading-level-6" class="headerlink" title="Heading level 6	Heading level 6"></a>Heading level 6	<h6>Heading level 6</h6></h6><p>Heading level 6<br>Alternate Syntax<br>Alternatively, on the line below the text, add any number of &#x3D;&#x3D; characters for heading level 1 or – characters for heading level 2.</p>
+<h6 id="Heading-level-6Heading-level-6"><a href="#Heading-level-6Heading-level-6" class="headerlink" title="Heading level 6	Heading level 6"></a>Heading level 6	<h6>Heading level 6</h6></h6><p>Heading level 6</p>
+<span id="more"></span>
+
+<p>Alternate Syntax<br>Alternatively, on the line below the text, add any number of &#x3D;&#x3D; characters for heading level 1 or – characters for heading level 2.</p>
 <p>Markdown	HTML	Rendered Output<br>Heading level 1<br>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;	<h1>Heading level 1</h1>	<br>Heading level 1<br>Heading level 2<br>—————	<h2>Heading level 2</h2>	<br>Heading level 2<br>Heading Best Practices<br>Markdown applications don’t agree on how to handle a missing space between the number signs (#) and the heading name. For compatibility, always put a space between the number signs and the heading name.</p>
 <p>✅  Do this	❌  Don’t do this</p>
 <h1 id="Here’s-a-Heading"><a href="#Here’s-a-Heading" class="headerlink" title="Here’s a Heading"></a>Here’s a Heading</h1><p>#Here’s a Heading<br>You should also put blank lines before and after a heading for compatibility.</p>
@@ -657,8 +679,8 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
 <p>My favorite search engine is <a href="https://duckduckgo.com/" title="The best search engine for privacy">Duck Duck Go</a>.<br>The rendered output looks like this:</p>
 <p>My favorite search engine is Duck Duck Go.</p>
 <p>URLs and Email Addresses<br>To quickly turn a URL or email address into a link, enclose it in angle brackets.</p>
-<p><a href="https://www.markdownguide.org/">https://www.markdownguide.org</a><br><a href="mailto:&#x66;&#97;&#x6b;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#x66;&#97;&#x6b;&#101;&#64;&#x65;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a><br>The rendered output looks like this:</p>
-<p><a href="https://www.markdownguide.org/">https://www.markdownguide.org</a><br><a href="mailto:&#x66;&#97;&#x6b;&#x65;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#x66;&#97;&#x6b;&#x65;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p><a href="https://www.markdownguide.org/">https://www.markdownguide.org</a><br><a href="mailto:&#102;&#97;&#107;&#x65;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;">&#102;&#97;&#107;&#x65;&#x40;&#x65;&#x78;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#x6d;</a><br>The rendered output looks like this:</p>
+<p><a href="https://www.markdownguide.org/">https://www.markdownguide.org</a><br><a href="mailto:&#102;&#x61;&#107;&#x65;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;">&#102;&#x61;&#107;&#x65;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#101;&#46;&#x63;&#x6f;&#109;</a></p>
 <p>Formatting Links<br>To emphasize links, add asterisks before and after the brackets and parentheses. To denote links as code, add backticks in the brackets.</p>
 <p>I love supporting the <strong><a href="https://eff.org/">EFF</a></strong>.<br>This is the <em><a href="https://www.markdownguide.org/">Markdown Guide</a></em>.<br>See the section on <a href="#code"><code>code</code></a>.<br>The rendered output looks like this:</p>
 <p>I love supporting the EFF.<br>This is the Markdown Guide.<br>See the section on code.</p>
@@ -709,8 +731,9 @@ To create a horizontal rule, use three or more asterisks (***), dashes (---), or
   <entry>
     <title>Common Linux Commands</title>
     <url>/3cffb865.html</url>
-    <content><![CDATA[<h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><p>ls　　        显示文件或目录<br>     -l           列出文件详细信息l(list)<br>     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)<br>mkdir         创建目录<br>     -p           创建目录，若无父目录，则创建p(parent)<br>cd               切换目录<br>touch          创建空文件<br>echo            创建带有内容的文件。<br>cat              查看文件内容<br>cp                拷贝<br>mv               移动或重命名<br>rm               删除文件<br>     -r            递归删除，可删除子目录及文件<br>     -f            强制删除<br>find              在文件系统中搜索某文件<br>wc                统计文本中行数、字数、字符数<br>grep             在文本文件中查找某个字符串<br>rmdir           删除空目录<br>tree             树形结构显示目录，需要安装tree包<br>pwd              显示当前目录<br>ln                  创建链接文件<br>more、less  分页显示文本文件内容<br>head、tail    显示文件头、尾内容<br>ctrl+alt+F1  命令行全屏模式
- </p>
+    <content><![CDATA[<h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><p>ls　　        显示文件或目录<br>     -l           列出文件详细信息l(list)<br>     -a          列出当前目录下所有文件及目录，包括隐藏的a(all)<br>mkdir         创建目录<br>     -p           创建目录，若无父目录，则创建p(parent)<br>cd               切换目录<br>touch          创建空文件<br>echo            创建带有内容的文件。<br>cat              查看文件内容<br>cp                拷贝<br>mv               移动或重命名<br>rm               删除文件<br>     -r            递归删除，可删除子目录及文件<br>     -f            强制删除<br>find              在文件系统中搜索某文件<br>wc                统计文本中行数、字数、字符数<br>grep             在文本文件中查找某个字符串<br>rmdir           删除空目录<br>tree             树形结构显示目录，需要安装tree包<br>pwd              显示当前目录<br>ln                  创建链接文件<br>more、less  分页显示文本文件内容<br>head、tail    显示文件头、尾内容<br>ctrl+alt+F1  命令行全屏模式</p>
+<span id="more"></span>
+<p> </p>
 <h4 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h4><p>stat              显示指定文件的详细信息，比ls更详细<br>who               显示在线登陆用户<br>whoami          显示当前操作用户<br>hostname      显示主机名<br>uname           显示系统信息<br>top                动态显示当前耗费资源最多进程信息<br>ps                  显示瞬间进程状态 ps -aux<br>du                  查看目录大小 du -h &#x2F;home带有单位显示目录信息<br>df                  查看磁盘大小 df -h 带有单位显示磁盘信息<br>ifconfig          查看网络情况<br>ping                测试网络连通<br>netstat          显示网络状态信息<br>man                命令不会用了，找男人  如：man ls<br>clear              清屏<br>alias               对命令重命名 如：alias showmeit&#x3D;”ps -aux” ，另外解除使用unaliax showmeit<br>kill                 杀死进程，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。
  </p>
 <h4 id="打包压缩相关命令"><a href="#打包压缩相关命令" class="headerlink" title="打包压缩相关命令"></a>打包压缩相关命令</h4><p>gzip：<br>bzip2：<br>tar:                打包压缩<br>     -c              归档文件<br>     -x              压缩文件<br>     -z              gzip压缩文件<br>     -j              bzip2压缩文件<br>     -v              显示压缩或解压缩过程 v(view)<br>     -f              使用档名<br>例：<br>tar -cvf &#x2F;home&#x2F;abc.tar &#x2F;home&#x2F;abc              只打包，不压缩<br>tar -zcvf &#x2F;home&#x2F;abc.tar.gz &#x2F;home&#x2F;abc        打包，并用gzip压缩<br>tar -jcvf &#x2F;home&#x2F;abc.tar.bz2 &#x2F;home&#x2F;abc      打包，并用bzip2压缩<br>当然，如果想解压缩，就直接替换上面的命令  tar -cvf  &#x2F; tar -zcvf  &#x2F; tar -jcvf 中的“c” 换成“x” 就可以了。

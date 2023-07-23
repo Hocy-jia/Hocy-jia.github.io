@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>[object Object]</title>
-    <url>/2023/07/23/test-article/</url>
-    <content><![CDATA[<h2 id="markdown中的空格使用方式"><a href="#markdown中的空格使用方式" class="headerlink" title="markdown中的空格使用方式"></a>markdown中的空格使用方式</h2><p>&ensp;&ensp;这里使用了两个半角空格<br>&nbsp;&nbsp;这里使用了两个不断行半角空格<br>&emsp;&emsp;这里使用了两个全角空格</p>
+    <url>/824ac3d0.html</url>
+    <content><![CDATA[<h2 id="markdown中的空格使用方式"><a href="#markdown中的空格使用方式" class="headerlink" title="markdown中的空格使用方式"></a>markdown中的空格使用方式</h2><p>后面有两个空格&ensp;&ensp;这里使用了两个半角空格<br>后面有两个空格&nbsp;&nbsp;这里使用了两个不断行半角空格<br>后面有两个空格&emsp;&emsp;这里使用了两个全角空格</p>
 ]]></content>
       <categories>
         <category>kata</category>
@@ -15,7 +15,7 @@
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/2023/07/21/hello-world/</url>
+    <url>/4a17b156.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 

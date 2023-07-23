@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"www.jiahao.online","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Muse | Mist":320,"Pisces | Gemini":240,"width":300,"display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":"mac","style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="&lt;&gt;如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。 如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。 认识 VIM">
+  <meta name="description" content="&lt;&gt;如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。 如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。 认识 VIM刚开始用 VIM 打开文件的时候，需要从宏观的去了解一下 VIM 这个编辑器。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vim Kit">
 <meta property="og:url" content="https://www.jiahao.online/ac9a4649.html">
 <meta property="og:site_name" content="迭代人生">
-<meta property="og:description" content="&lt;&gt;如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。 如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。 认识 VIM">
+<meta property="og:description" content="&lt;&gt;如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。 如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。 认识 VIM刚开始用 VIM 打开文件的时候，需要从宏观的去了解一下 VIM 这个编辑器。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-23T13:07:11.000Z">
 <meta property="article:modified_time" content="2023-07-23T13:07:11.000Z">
@@ -290,9 +290,9 @@
       
         <p>&lt;&gt;<br>如果是新手 vim 使用者，最好在阅读完本文，熟练操作以后，再浏览上述的几篇文章，相对好理解些，也可以加深对 vim 的一些认识，上面我还贴了一篇 tmux 的文章，它简单易学，同 vim 搭配使用，真的很方便，高效。</p>
 <p>如果文章有表述不当的地方可以留言指正，互相学习，共同进步 。</p>
-<p>认识 VIM</p>
+<p>认识 VIM<br>刚开始用 VIM 打开文件的时候，需要从宏观的去了解一下 VIM 这个编辑器。</p>
 <span id="more"></span>
-<p>刚开始用 VIM 打开文件的时候，需要从宏观的去了解一下 VIM 这个编辑器。</p>
+
 <p>VIM 常用的有四个模式，：</p>
 <p>正常模式 (Normal-mode)<br>插入模式 (Insert-mode)<br>命令模式 (Command-mode)<br>可视模式 (Visual-mode)</p>
 <p>什么是正常模式（Normal-mode) ？</p>
@@ -486,8 +486,8 @@
 <p>举例如下：</p>
 <p>:map ^D Ahelloworld<ESC>表示在文件的光标所在行的行尾，添加 helloworld 字符串，按住组合键 ctrl + d 就会执行操作。</p>
 <p>使用 ab</p>
-<p>:ab email <a href="mailto:&#120;&#120;&#x78;&#x78;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;">&#120;&#120;&#x78;&#x78;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
-<p>: 后面的 ab 是关键字 ,该命令执行后，然后切换到编辑模式下,输入 email 会把输入的 email 自动替换成 <a href="mailto:&#x78;&#x78;&#120;&#120;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x78;&#x78;&#120;&#120;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>。</p>
+<p>:ab email <a href="mailto:&#120;&#x78;&#120;&#x78;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x78;&#120;&#x78;&#x40;&#x67;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>: 后面的 ab 是关键字 ,该命令执行后，然后切换到编辑模式下,输入 email 会把输入的 email 自动替换成 <a href="mailto:&#120;&#120;&#120;&#120;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#120;&#120;&#120;&#120;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a>。</p>
 <p>这个命令主要是处理频繁输入同样的长串字符串。</p>
 <p>VIM 的正常模式（Normal-model）</p>
 <p>VIM 正常模式下，主要进行的操作有光标的移动，复制文本，删除文本，黏贴文本等。</p>

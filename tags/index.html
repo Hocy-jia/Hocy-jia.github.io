@@ -458,18 +458,18 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : ,
-      notify     : ,
+      notify     : true,
       appId      : 'qw9xfwEfNob7sFPUbj5NsVr8-gzGzoHsz',
       appKey     : 'sawOnUpKkyF1Zdx8foDw2xow',
       placeholder: "Just do it",
       avatar     : 'retro',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : true,
+      visitor    : false,
       lang       : 'en' || 'zh-cn',
       path       : location.pathname,
       recordIP   : false,
-      serverURLs : 'https://jiahao.online# When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)'
+      serverURLs : ''
     });
   }, window.Valine);
 });

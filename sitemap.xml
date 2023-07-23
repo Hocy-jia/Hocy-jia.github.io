@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.jiahao.online/about/index.html</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.jiahao.online/guestbook/index.html</loc>
+    <loc>https://www.jiahao.online/2023/07/23/test-article/</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -30,6 +21,24 @@
   
   <url>
     <loc>https://www.jiahao.online/tags/index.html</loc>
+    
+    <lastmod>2023-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jiahao.online/about/index.html</loc>
+    
+    <lastmod>2023-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jiahao.online/guestbook/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -91,6 +100,27 @@
   </url>
 
   
+  <url>
+    <loc>https://www.jiahao.online/tags/test/</loc>
+    <lastmod>2023-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.jiahao.online/tags/play/</loc>
+    <lastmod>2023-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://www.jiahao.online/categories/kata/</loc>
+    <lastmod>2023-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

@@ -3,7 +3,7 @@
   <entry>
     <title>[object Object]</title>
     <url>/2023/07/23/test-article/</url>
-    <content><![CDATA[<h2 id="markdown中的空格使用方式"><a href="#markdown中的空格使用方式" class="headerlink" title="markdown中的空格使用方式"></a>markdown中的空格使用方式</h2><p>&amp;ensp&amp;ensp这里使用了两个半角空格<br>&amp;nbsp&amp;nbsp这里使用了两个不断行半角空格<br>&amp;emsp&amp;emsp这里使用了两个全角空格</p>
+    <content><![CDATA[<h2 id="markdown中的空格使用方式"><a href="#markdown中的空格使用方式" class="headerlink" title="markdown中的空格使用方式"></a>markdown中的空格使用方式</h2><p>&ensp;&ensp;这里使用了两个半角空格<br>&nbsp;&nbsp;这里使用了两个不断行半角空格<br>&emsp;&emsp;这里使用了两个全角空格</p>
 ]]></content>
       <categories>
         <category>kata</category>
